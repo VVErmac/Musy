@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Musy</string>
+    <string name="action_settings">Quit player</string>
+    <string name="tab1_tracks">TRACKS</string>
+    <string name="tab2_artists">ARTISTS</string>
+    <string name="tab3_albums">ALBUMS</string>
+    <string name="playing">Now playing</string>
+</resources>

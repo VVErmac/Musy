@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/artistTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:gravity="start"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginTop="19dp"
+        android:text="Music Player"
+        android:textColor="#d7ccc8"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/musicicon66405123123" />
+
+    <TextView
+        android:id="@+id/songTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:text="Song Title"
+        android:textColor="#d7ccc8"
+        android:textSize="23sp" />
+
+<!--    <ToggleButton
+        android:id="@+id/playPauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/reverseButton"
+        android:layout_alignBottom="@+id/reverseButton"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:onClick="OnClick"
+        android:text="ToggleButton"
+        android:textOff="Pause"
+        android:textOn="Play" />
+
+    <Button
+        android:id="@+id/reverseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="41dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:onClick="OnClick"
+        android:text="Prev" />
+
+    <Button
+        android:id="@+id/forwardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/playPauseButton"
+        android:layout_alignBottom="@+id/playPauseButton"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:onClick="OnClick"
+        android:text="Forward" />
+
+    <ToggleButton
+        android:id="@+id/shuffleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reverseButton"
+        android:layout_alignLeft="@+id/reverseButton"
+        android:layout_alignStart="@+id/reverseButton"
+        android:textOff="Shuffle"
+        android:textOn="Unshuffle" />-->
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:layout_weight="1"
+            android:onClick="OnClick"
+            android:id="@+id/reverseButton"
+            android:src="@drawable/ic_skip_previous_black_18dp"
+            android:contentDescription="@string/playing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/shuffleButton"
+            android:onClick="OnClick"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_shuffle_black_18dp"/>
+
+        <ImageButton
+            android:id="@+id/playPauseButton"
+            android:onClick="OnClick"
+            android:layout_weight="1"
+            android:src="@drawable/ic_play_arrow_black_18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/forwardButton"
+            android:onClick="OnClick"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_skip_next_black_18dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
